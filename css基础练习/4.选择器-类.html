@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <style>
+        /* .(点号)+类名+{css属性名：属性；} */
+        /* 通过类名找到所有含该类名的标签设置样式 */
+        /* 类名可以由数字、字母、下划线、中划线组成但不能以数字或者中划线开头 */
+        /* 一个标签可以有多个类名，类名之间用空格隔开 */
+        /* 类可以重复 */
+        /* 类必须既被定义也要被使用才能生效 */
+        .color{
+            color: blue;
+        }
+        .size{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>你好世界</p>
+    <p class="color size">hello world</p>
+    <p class="size">这是一个p标签</p>
+</body>
+</html>
