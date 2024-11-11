@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .news{
+            width: 500px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 42px 30px 0;
+        }
+        .news .h2{
+            font-size: 30px;
+            border-bottom: 1px solid #ccc;
+            line-height: 1;
+            padding-bottom: 9px;
+        }
+        /* 去掉标签的符号 */
+        ul{
+            list-style: none;
+        }
+        li{
+            height: 50px;
+            line-height: 50px;
+            padding-left: 28px;
+            border-bottom: 1px dashed #ccc; 
+        }
+        li a{
+            text-decoration: none;
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2 class="h2">最新文章/New article</h2>
+        <ul>
+            <li><a href="#">坚持全面深化改革开放</a></li>
+            <li><a href="#">处处飘扬“中国红”</a></li>
+            <li><a href="#">券商:开户如潮水,根本开不完</a></li>
+            <li><a href="#">罗永浩宣布还清8.24亿巨债</a></li>
+            <li><a href="#">多家银行大额存单刮起“转让潮”</a></li>
+        </ul>
+    </div>
+</body>
+</html>

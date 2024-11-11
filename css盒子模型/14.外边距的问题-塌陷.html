@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距的问题-塌陷</title>
+    <style>
+        /* 在son里面添加margin会将父级拖拽下来 */
+        .farther{
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /* 解决方法一：只使用父级里面的padding */
+            /* padding: 50px; */
+            /* 解决方法二：父级使用border后son可以使用margin */
+            /* 缺点：当设计不需要边框时就不适用了 */
+            /* border: 1px solid #000; */
+            /* 方法三，给父级设置overflow：hidden */
+            /* overflow: hidden; */
+            /* 方法四：子级转换为行内块元素 */
+            /* 方法五：设置浮动 */
+            
+        }
+        .son{
+            width: 80px;
+            height: 60px;
+            background-color: skyblue;
+            margin-top: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="farther">
+        <div class="son">
+            son
+        </div>
+    </div>
+</body>
+</html>

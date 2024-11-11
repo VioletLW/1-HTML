@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-C3</title>
+    <style>
+        /* 由于边框及内边距总是会撑大盒子，但是在css3里面可以固定盒子大小 */
+        /* box-sizing:boder-box：固定盒子大小，可以不用手动去减小盒子 */
+        /* 内减模式 */
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            padding: 20px;
+            border: 10px solid #000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        文字
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距的问题</title>
+    <style>
+        /* 垂直布局的块级元素，上下的margin会合并 */
+        /* 结果：保留其中的最大值 */
+        /* 解决方法：只给其中一个人设置大小 */
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: pink ;
+        }
+        .one{
+            margin-bottom: 50px;
+        }
+        .two{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        111
+    </div>
+    <div class="two">
+        222
+    </div>
+</body>
+</html>

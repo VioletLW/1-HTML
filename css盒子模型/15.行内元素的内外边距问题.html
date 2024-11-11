@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内外边距问题</title>
+    <style>
+        span{
+            /* padding: 100px; */
+            /* margin: 100px; */
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 如果想要通过margin或者padding改变行内标签的位置，垂直位置无法生效 -->
+    <!-- 行内标签的padding的bottom跟top不生效 -->
+    <!-- 行内标签的margin的bottom跟top不生效 -->
+    <!-- 解决方法：使用行高 -->
+    <span>span</span>
+</body>
+</html>

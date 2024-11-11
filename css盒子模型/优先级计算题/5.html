@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 就近原则 */
+        /* 都是继承，就看继承里面谁权重高 ，看继承哪个父级，哪个选择器就生效*/
+        /* span继承了p的 */
+        div p{
+            color: red;
+        }
+        /* span继承了div的 */
+        .father{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="son">
+            <span>文字</span>
+        </p>
+    </div>
+</body>
+</html>

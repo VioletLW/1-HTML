@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级-叠加运算</title>
+    <style>
+        /* 按权重来判断哪一个生效：(行内，id，类，标签) */
+        /* (0,1,0,1) */
+        div #one{
+           color: blue; 
+        }
+        /* 0,0,2,0 */
+        .farther.son{
+            color: pink;
+        }
+        /* 0,0,1,1 */
+        .farther p{
+            color: purple;
+        }
+        /* 0,0,0,2 */
+        div p{
+            color: yellow;
+        }
+        /* 先比每一项的行内，谁多谁生效，若是一样就向下一级比较，同样是谁多谁生效依次类推 */
+        /* !important如果不是继承的那就是权重最高的 */
+    </style>
+</head>
+<body>
+    <div class="farther">
+        <p class="son" id="one">这是一个标签</p>
+    </div>
+</body>
+</html>

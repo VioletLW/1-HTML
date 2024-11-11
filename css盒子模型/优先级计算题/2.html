@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 由于是空格隔开，为所有后代可以锁定到最后一个div所有不是继承 */
+        /* (0 0 0 2) */
+        div div {
+            color: skyblue;
+        }
+        /* (0 0 0 1) */
+        div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                这行文本是什么颜色的？
+            </div>
+        </div>
+    </div>
+</body>
+</html>

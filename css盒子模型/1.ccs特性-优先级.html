@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+
+        #color{
+            color: darkslateblue;
+        }
+        .box{
+            color: orange;
+        }
+        div{
+            color: green !important;
+        }
+        body{
+            color: red;
+        }
+        /* 生效能力：继承<通配符<标签<类<id<行内式<！import */
+        /* ！import不能给继承加，因为子类有自己的样式就无法继承父类样式 */
+    </style>
+</head>
+<body>
+    <!-- 意义：当一个标签使用了多个选择器，样式冲突时，到底谁生效 -->
+    <div class="box" id="color" style="color: pink;"> 测试优先级</div>
+</body>
+</html>
