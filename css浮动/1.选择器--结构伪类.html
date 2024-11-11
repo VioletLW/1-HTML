@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类</title>
+    <style>
+        /* 根据元素在HTML中的结构关系查找元素 */
+        /* 减少 元素在HTML中类的依赖，有利于保持代码整洁 */
+        /* 用于查找父级选择器中的子元素 */
+        /* 元素名：需要的某些位置的元素-child{css的内容} */
+        /* 第一个 */
+        li:first-child{
+            background-color: pink;
+        }
+        /* 最后一个 */
+        li:last-child{
+            background-color: yellow;
+        }
+        /* 任意一个 */
+        li:nth-child(2){
+            background-color: green;
+        }
+        /* 倒数第几个 */
+        li:nth-last-child(2){
+            background-color: orange;
+        }
+        /* 任意一个的选择括号里面可以填写公式 */
+        /* 偶数：2n/even */
+        /* 奇数：2n-1/2n+1/odd */
+        /* 前五个：-n+5 */
+        /* 第五个往后:n+5 */
+        /* n从0开始计数 */
+    </style>
+</head>
+<body>
+    <!-- ul>li{这是第$个li}*8 -->
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+</body>
+</html>

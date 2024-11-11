@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动-特点</title>
+    <style>
+        /* 浮动的特点：脱离标准流的控制，不占标准流的位置，某一个标签浮动后，其后续标签占据其本来位置，类似于多图层，且后续标签位于图层下方 */
+        /* 浮动元素比标准流高半个级别，只能覆盖其下图层的标签元素，不能覆盖其内容或文本 */
+        /* 浮动是顶对齐 */
+        /* 浮动找浮动，下一个元素会在上一个浮动元素的左右浮动 */
+        /* 不想要顶对齐就加外边距 */
+        /* 浮动后的标签具备行内块的特征 ，可以设置高宽*/
+        .one{
+            width: 60px;
+            height: 80px;
+            background-color: green;
+            float: left;
+            margin-top: 10px;
+        }
+        .two{
+            width: 100px;
+            height: 120px;
+            background-color: yellow;
+            float: left;
+            /* 因为有浮动，不能生效，盒子无法水平居中 */
+            margin: 0 auto;
+        }
+        .three{
+            width: 200px;
+            height: 240px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>

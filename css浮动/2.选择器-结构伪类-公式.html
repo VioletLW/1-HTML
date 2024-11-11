@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类-公式</title>
+    <style>
+        /* 任意一个的选择括号里面可以填写公式 */
+        /* 偶数：2n/even */
+        /* 奇数：2n-1/2n+1/odd */
+        /* 前五个：-n+5 */
+        /* 第五个往后:n+5 */
+        /* n从0开始计数 */
+        li:nth-child(2n){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+</body>
+</html>
