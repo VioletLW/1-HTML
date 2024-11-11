@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label标签</title>
+</head>
+<body>
+    <!-- label:用于绑定内容跟表单标签的关系 -->
+    <!--方法一： 用label将文本包裹起来，for里面的值与前面input里面id的值相等 -->
+    <!-- 方法二： 直接用label将整个标签包裹起来，并将for删除 -->
+    性别：
+    <input type="radio" name="sex" id="nan"><label for="nan">男</label>
+    <label ><input type="radio" name="sex">女</label>
+    <!-- 这样无论是点圆圈还是文本都可以选中了 -->
+</body>
+</html>

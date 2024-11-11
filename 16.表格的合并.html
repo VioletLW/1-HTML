@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的合并</title>
+</head>
+<body>
+    <!-- rowspan:跨行合并,引号里面写合并的行数 -->
+    <!--colspan:跨列合并 ，引号里面写合并的列数-->
+    <!-- 只能合并同一个结构标签里面的，不能跨结构合并如：thead/tbody/tfoot -->
+    <!-- 保留原则：只保留左及上的内容 -->
+    <!-- 合并方法：去掉不需要保留的在保留的标签内填写代码 -->
+     <table border="1" width="400" height="400">
+        <caption><b>蛊界人物介绍</b></caption>
+        <tr>
+            <th>姓名</th><th>性别</th><th>蛊虫</th>
+        </tr>
+        <tr>
+            <td>古月方源</td><td rowspan="3">男</td><td>春秋蝉</td>
+        </tr>
+        <tr>
+            <td>凤九歌</td><td>命甲</td>
+        </tr>
+        <tr>
+            <td>盗天魔尊</td><td>偷生</td>
+        </tr>
+        <tr>
+            <td>黑楼兰</td><td colspan="2">女</td>
+        </tr>
+     </table>
+</body>
+</html>
