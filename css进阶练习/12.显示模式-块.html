@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式-块</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 块：虽然设置了高宽但是还是独占一行 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 宽度默认是父元素的宽度，高度默认由内容撑开 -->
+    <!-- body是div的父级，所以div的宽默认与body一样宽 -->
+    <!-- 可以设置宽高 -->
+    <div>111</div>
+    <div>222</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性连写</title>
+    <style>
+        div{
+            /* background: color image repeat position;通用顺序，可以打乱:背景颜色，背景图，背景平铺，背景位置 */
+            /* 如果盒子跟背景图片大小一样可以简写成：backgrand:url()*/
+            width: 400px;
+            height: 400px;
+            /* 背景图位置英文可以颠倒，但是数值不能 */
+            background:pink url(./CSS进阶的材料/图片/QQ截图桌面截图.png) no-repeat center bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        示例文字
+    </div>
+</body>
+</html>

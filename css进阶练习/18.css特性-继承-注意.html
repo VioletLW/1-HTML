@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承-注意</title>
+    <style>
+        div{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">超链接</a>
+        <!-- a标签不继承父级的颜色变化 -->
+        <h1>一级标签</h1>
+        <!-- h标签不继承父级的字号变化 -->
+        <!-- 原理是两者都自带特性,生效时覆盖了父级的特性 -->
+    </div>
+</body>
+</html>

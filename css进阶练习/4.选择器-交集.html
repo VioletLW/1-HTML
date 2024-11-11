@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器-交集</title>
+    <style>
+        /* p{
+            color: blue;
+        } */
+        /* .box{
+            color: blue;
+        } */
+        /* 交集选择器：直接就是标签名加属性名 */
+        /* 这样可以选择带特定属性的某一个标签 */
+        p.box{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="box">这是要变色的文本</p>
+    <p>pppp</p>
+    <div class="box">这是不变色的</div>
+</body>
+</html>

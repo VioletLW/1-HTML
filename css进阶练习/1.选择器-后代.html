@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器-后代</title>
+    <style>
+        /* 父选择器+空格+子选择器 */
+        /* 后代选择器会选中后面的所有后代包括子、孙、重孙 */
+        div p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个p标签</p>
+    <div>
+        <p>这是div的子标签</p>
+    </div>
+</body>
+</html>

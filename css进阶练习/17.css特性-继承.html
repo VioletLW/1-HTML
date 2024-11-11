@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特性-继承</title>
+    <style>
+        div{
+            color: red;
+            height: 200px;
+            width: 200px;
+        }
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 子元素/标签,默认继承父元素样式的特点(子承父业) -->
+    <!-- 并不是所有属性都能继承,可以继承的常见属性(文字控制属性都能继承) -->
+    <!-- color,font-style,font-weight,font-size,font-family,text-tend,text-align,line-height...... -->
+    <!-- 可以通过调试工具判断是否可以继承 -->
+    <div>
+        div
+        <span>span</span>
+        <!-- span继承了div的特性所以字变色了 -->
+        <!-- 但是通过检查看的出span并没有继承div的宽高 -->
+    </div>
+</body>
+</html>

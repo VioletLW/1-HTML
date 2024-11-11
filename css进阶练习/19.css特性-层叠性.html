@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>层叠性</title>
+    <style>
+        div{
+            color: blue;
+            color: yellow;
+            /* 一个标签设置同样的样式此时样式会层叠覆盖,写在最后的样式会生效 */
+        }
+        .size{
+            font-size: 80px;
+            /* 给一个标签设置不同的样式,样式会层叠叠加,最终样式会共同生效 */
+            /* 注意:当样式冲突时,只有当选择器优先级相同时,才能通过层叠判断结果 */
+        }
+    </style>
+</head>
+<body>
+    <div class="size">
+        div
+    </div>
+</body>
+</html>
