@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例1</title>
+    <style>
+        input{
+            /* 浏览器遇到行内跟行内块标签当作文字处理，默认文字是按照基线对齐的 */
+            height: 50px;
+            /* 搜索框有margin跟padding，它只是让内容像素只有五十，所以必须内减 */
+            box-sizing: border-box;
+            
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"> <input type="button" value="搜索">
+</body>
+</html>
