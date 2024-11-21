@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位-层级关系</title>
+    <style>
+        /* 
+        1.不同布局方式元素的层级关系：
+        标准流<浮动<定位
+        */
+
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .one{
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            z-index: 1;
+            background-color: pink;
+        }
+        .two{
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            background-color: yellow;
+        }
+        /* 
+        默认情况下：定位的盒子，后来者居上。默认的z-index,取值为0
+        手动：z-index:整数，取值越大。显示顺序越靠上
+        注意：z-index必须配合上定位使用才能生效
+        */
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

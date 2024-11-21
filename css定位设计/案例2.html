@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner-定位</title>
+    <style>
+        .banner{
+            position: relative;
+            margin: 0 auto;
+            width: 1226px;
+            height: 600px;
+            /* background-color: pink; */
+        }
+        .mask{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 150px;
+            /* 绝对·定位盒子的显示模式具备行内块特点：加宽高生效，如果没有宽度也没有内容，则盒子宽高尺寸为零 */
+            /* width: 1226px; */
+            /* 如果子集与父级宽度相同 */
+            width: 100%;
+            background-color: rgba(0, 0, 0, .78);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="./素材/图片/照片3.png" alt="">
+        <!-- 遮罩：mask -->
+        <div class="mask"></div>
+    </div>
+</body>
+</html>
